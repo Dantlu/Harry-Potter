@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    background-size: 1300px;
+}
+
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.75em;
+    color: dodgerblue;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+li {
+    font-size: 1.25em;
+    list-style: none;
+}
+
+button {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover {
+    background-color: rgb(86, 8, 158);
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    height: 120px;
+    padding: 10px 0px;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 110px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: blue;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url("fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: whitesmoke;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#inicio .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#peliculas {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    text-align: center;
+
+}
+
+#peliculas h2 {
+    margin-top: 0px;
+    font-size: 3.2em;
+}
+
+#peliculas .container {
+    padding: 150px 12px;
+}
+
+#peliculas p {
+    display: none;
+}
+
+#peliculas .carta {
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url("hp1.jpg");
+
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url("hp2.webp");
+
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url("hp3.jpg");
+
+}
+
+.carta:nth-child(4) {
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url("hp4.jpg");
+
+}
+
+.carta:nth-child(5) {
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url("hp5.jpg");
+
+}
+
+.carta:nth-child(6) {
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url("hp6.jpg");
+
+}
+
+.carta:nth-child(7) {
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url("hp7.jpg");
+
+}
+
+.carta:last-child {
+    background-image: linear-gradient(0deg,
+            rgb(0, 0, 0, 0.5),
+            rgb(0, 0, 0, 0.5)), url("hp8.webp");
+
+}
+
+#parques .container {
+    text-align: center;
+    padding: 150px 12px;
+}
+
+#parques img {
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+#parques li {
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#parques h3 {
+    color: black;
+    padding: 20px;
+}
+
+#parques iframe {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    margin: 0;
+    color: rgb(100, 100, 100);
+    padding: 14px;
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+
+    }
+
+    header .logo {
+        height: 80px;
+    }
+
+    #inicio .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #inicio .texto{
+        width: 50%;
+        text-align: initial;
+        padding-left: 30px;
+        max-width: 600px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #inicio .img-container{
+        background-image: url('jk.png');
+        background-size: cover;
+        background-position: center center;
+        height: 300px;
+        width: 200px;
+    }
+
+
+    #peliculas .imagenes {
+        display: flex;
+        justify-content: center;
+    }
+
+    #peliculas p {
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+    #peliculas h3 {
+        margin-top: 0;
+    }
+
+    #peliculas .carta {
+        padding: 15px;
+    }
+
+    footer .container {
+        justify-content: flex-end;
+    }
+
+}
